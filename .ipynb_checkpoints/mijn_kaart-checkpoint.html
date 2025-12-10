@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fa5f01c8370536aa85f79e194c169dac {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fa5f01c8370536aa85f79e194c169dac" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fa5f01c8370536aa85f79e194c169dac = L.map(
+                "map_fa5f01c8370536aa85f79e194c169dac",
+                {
+                    center: [20.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 2,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4eddc91dad8971186dd08a3a58805e5c = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_4eddc91dad8971186dd08a3a58805e5c.addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+            var circle_marker_b25d91174a62c53c73eb4b9314da9f01 = L.circleMarker(
+                [33.4484, -112.074],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.16549203863221, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_d8512f479fa5644db9ebdb69de672018 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b2b4de5de633ac9a3ce3660f8d75bd82 = $(`<div id="html_b2b4de5de633ac9a3ce3660f8d75bd82" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Phoenix</b><br>             Vertraging: 0.40 min<br>             Temp: 15.5 °C<br>             Lucht: 28.9         </div>         </div>`)[0];
+                popup_d8512f479fa5644db9ebdb69de672018.setContent(html_b2b4de5de633ac9a3ce3660f8d75bd82);
+            
+        
+
+        circle_marker_b25d91174a62c53c73eb4b9314da9f01.bindPopup(popup_d8512f479fa5644db9ebdb69de672018)
+        ;
+
+        
+    
+    
+            var circle_marker_a4a0fd8c8c2a7eb645df49048434db83 = L.circleMarker(
+                [32.7767, -96.797],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.887871853546911, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_7192f6fc997eb9205cf7f931b9d35df8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_64e4c7ce4526fd53a582cd46da025e47 = $(`<div id="html_64e4c7ce4526fd53a582cd46da025e47" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Dallas</b><br>             Vertraging: 0.11 min<br>             Temp: 17.4 °C<br>             Lucht: 14.1         </div>         </div>`)[0];
+                popup_7192f6fc997eb9205cf7f931b9d35df8.setContent(html_64e4c7ce4526fd53a582cd46da025e47);
+            
+        
+
+        circle_marker_a4a0fd8c8c2a7eb645df49048434db83.bindPopup(popup_7192f6fc997eb9205cf7f931b9d35df8)
+        ;
+
+        
+    
+    
+            var circle_marker_7869f1505e9cdd801681f4bf0871557b = L.circleMarker(
+                [29.4241, -98.4936],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.290322580645162, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_827a3fbf787208eb188fee7519b6a166 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c13f9d2193480527b6336c6704415da4 = $(`<div id="html_c13f9d2193480527b6336c6704415da4" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>San Antonio</b><br>             Vertraging: 0.41 min<br>             Temp: 20.5 °C<br>             Lucht: 35.0         </div>         </div>`)[0];
+                popup_827a3fbf787208eb188fee7519b6a166.setContent(html_c13f9d2193480527b6336c6704415da4);
+            
+        
+
+        circle_marker_7869f1505e9cdd801681f4bf0871557b.bindPopup(popup_827a3fbf787208eb188fee7519b6a166)
+        ;
+
+        
+    
+    
+            var circle_marker_9b707318203891d1a176cfd403211b3b = L.circleMarker(
+                [39.9526, -75.1652],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.300331026181162, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_ca7bc66e1df94b57f0a55f11ed0c3a42 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_964fd161dcdb87dbbf38b87186672013 = $(`<div id="html_964fd161dcdb87dbbf38b87186672013" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Philadelphia</b><br>             Vertraging: 1.54 min<br>             Temp: 12.7 °C<br>             Lucht: 23.5         </div>         </div>`)[0];
+                popup_ca7bc66e1df94b57f0a55f11ed0c3a42.setContent(html_964fd161dcdb87dbbf38b87186672013);
+            
+        
+
+        circle_marker_9b707318203891d1a176cfd403211b3b.bindPopup(popup_ca7bc66e1df94b57f0a55f11ed0c3a42)
+        ;
+
+        
+    
+    
+            var circle_marker_1655ff4221f6d1a8f2e2ebccf37b34ea = L.circleMarker(
+                [34.0522, -118.2437],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.764216942578098, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_6f567801e52cb1a6c7eccb209a6e96ef = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ad44375da19e64082e6cedfdac2377c5 = $(`<div id="html_ad44375da19e64082e6cedfdac2377c5" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Los Angeles</b><br>             Vertraging: 0.47 min<br>             Temp: 21.3 °C<br>             Lucht: 33.5         </div>         </div>`)[0];
+                popup_6f567801e52cb1a6c7eccb209a6e96ef.setContent(html_ad44375da19e64082e6cedfdac2377c5);
+            
+        
+
+        circle_marker_1655ff4221f6d1a8f2e2ebccf37b34ea.bindPopup(popup_6f567801e52cb1a6c7eccb209a6e96ef)
+        ;
+
+        
+    
+    
+            var circle_marker_cd8951f04cb6d6b9e8beaae2ab21e97f = L.circleMarker(
+                [32.7157, -117.1611],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.50193856248136, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_9574123a316633f856e1cecae859be49 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d8bb0bf72cab080f604e04a0fd62cff0 = $(`<div id="html_d8bb0bf72cab080f604e04a0fd62cff0" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>San Diego</b><br>             Vertraging: 0.44 min<br>             Temp: 20.7 °C<br>             Lucht: 18.8         </div>         </div>`)[0];
+                popup_9574123a316633f856e1cecae859be49.setContent(html_d8bb0bf72cab080f604e04a0fd62cff0);
+            
+        
+
+        circle_marker_cd8951f04cb6d6b9e8beaae2ab21e97f.bindPopup(popup_9574123a316633f856e1cecae859be49)
+        ;
+
+        
+    
+    
+            var circle_marker_5c07aada3e129cb63a8bdea6247b971a = L.circleMarker(
+                [41.8781, -87.6298],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 22.340238693968786, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_19c08b5c9b86c0290121e6e21ab01318 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6afdd8b7a87c5771e3a8011396f3cdbd = $(`<div id="html_6afdd8b7a87c5771e3a8011396f3cdbd" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Chicago</b><br>             Vertraging: 2.04 min<br>             Temp: 10.5 °C<br>             Lucht: 22.8         </div>         </div>`)[0];
+                popup_19c08b5c9b86c0290121e6e21ab01318.setContent(html_6afdd8b7a87c5771e3a8011396f3cdbd);
+            
+        
+
+        circle_marker_5c07aada3e129cb63a8bdea6247b971a.bindPopup(popup_19c08b5c9b86c0290121e6e21ab01318)
+        ;
+
+        
+    
+    
+            var circle_marker_6f8151177b3b2fa26ecbf2f5ebfd5eb9 = L.circleMarker(
+                [37.3382, -121.8863],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.353071083505867, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_54a15f9d6919bb395996377291e1cf6e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a931205639ba102e9111fd1acae1901d = $(`<div id="html_a931205639ba102e9111fd1acae1901d" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>San Jose</b><br>             Vertraging: 0.29 min<br>             Temp: 16.1 °C<br>             Lucht: 20.8         </div>         </div>`)[0];
+                popup_54a15f9d6919bb395996377291e1cf6e.setContent(html_a931205639ba102e9111fd1acae1901d);
+            
+        
+
+        circle_marker_6f8151177b3b2fa26ecbf2f5ebfd5eb9.bindPopup(popup_54a15f9d6919bb395996377291e1cf6e)
+        ;
+
+        
+    
+    
+            var circle_marker_26d8b83c69ec3fe65194cbfc249d79bf = L.circleMarker(
+                [29.7604, -95.3698],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.605808806399006, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_e7bbd6de06dc336d47b55f69010b52e0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_aa52aa6fc0f3514d32d93b5906b78b6f = $(`<div id="html_aa52aa6fc0f3514d32d93b5906b78b6f" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>Houston</b><br>             Vertraging: 0.95 min<br>             Temp: 20.6 °C<br>             Lucht: 25.9         </div>         </div>`)[0];
+                popup_e7bbd6de06dc336d47b55f69010b52e0.setContent(html_aa52aa6fc0f3514d32d93b5906b78b6f);
+            
+        
+
+        circle_marker_26d8b83c69ec3fe65194cbfc249d79bf.bindPopup(popup_e7bbd6de06dc336d47b55f69010b52e0)
+        ;
+
+        
+    
+    
+            var circle_marker_0fbf00d3a9ecaca05d7144911906c2af = L.circleMarker(
+                [40.7128, -74.006],
+                {"bubblingMouseEvents": true, "color": "orange", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "orange", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.678548401952657, "stroke": true, "weight": 3}
+            ).addTo(map_fa5f01c8370536aa85f79e194c169dac);
+        
+    
+        var popup_bdb58793bd337feca267aba890ab08ca = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_636996ec64ffc1daf6fe51152bc842ce = $(`<div id="html_636996ec64ffc1daf6fe51152bc842ce" style="width: 100.0%; height: 100.0%;">         <div style="font-family: Arial; width: 150px;">             <b>New York</b><br>             Vertraging: 0.71 min<br>             Temp: 14.1 °C<br>             Lucht: 19.9         </div>         </div>`)[0];
+                popup_bdb58793bd337feca267aba890ab08ca.setContent(html_636996ec64ffc1daf6fe51152bc842ce);
+            
+        
+
+        circle_marker_0fbf00d3a9ecaca05d7144911906c2af.bindPopup(popup_bdb58793bd337feca267aba890ab08ca)
+        ;
+
+        
+    
+</script>
+</html>
